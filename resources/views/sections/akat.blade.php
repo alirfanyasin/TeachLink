@@ -4,7 +4,7 @@
   </header>
 
   <div class="grid grid-cols-2 gap-10">
-    <div class="">
+    <div class="animate-bounce">
       <img src="{{ asset('assets/img/mascot-2.png') }}" class="w-full" alt="Non Akademik">
     </div>
 

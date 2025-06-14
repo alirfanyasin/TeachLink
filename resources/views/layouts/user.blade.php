@@ -58,8 +58,11 @@
           'mentor-registrasi-detail'))
     <script>
       const navbar = document.getElementById('navbar');
+      const logo = document.getElementById('logo');
+
       navbar.classList.add('text-black', 'bg-white',
         'shadow-md')
+      logo.src = "{{ asset('assets/img/logo-secondary.png') }}";
     </script>
   @else
     {{-- Scroll navbar background and logo swap --}}
@@ -105,6 +108,34 @@
     }
     // Jalankan saat halaman dimuat
     document.addEventListener('DOMContentLoaded', updateNavbarMenu);
+  </script>
+
+
+  <!-- JavaScript Count Up -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const counters = document.querySelectorAll(".count");
+      const speed = 100;
+
+      counters.forEach(counter => {
+        const target = +counter.getAttribute("data-target");
+        const needsPlus = counter.dataset.plus === "true";
+
+        const updateCount = () => {
+          const current = +counter.innerText.replace('+', '');
+          const increment = Math.ceil(target / speed);
+
+          if (current < target) {
+            counter.innerText = current + increment;
+            setTimeout(updateCount, 30);
+          } else {
+            counter.innerText = needsPlus ? `${target}+` : `${target}`;
+          }
+        };
+
+        updateCount();
+      });
+    });
   </script>
 
 

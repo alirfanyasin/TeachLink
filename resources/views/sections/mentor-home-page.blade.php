@@ -29,18 +29,18 @@
       <div
         class="bg-white shadow-xl rounded-2xl overflow-hidden group cursor-pointer min-w-[80%] sm:min-w-[60%] md:min-w-[calc(100%/3-16px)] snap-start">
         <div class="overflow-hidden">
-          <img src="{{ asset('assets/img/card-mentor/04.png') }}"
+          <img src="{{ asset('assets/img/mentor/17.png') }}"
             class="w-full transform transition-transform duration-500 ease-in-out group-hover:scale-105" alt="">
         </div>
         <div class="p-8 mt-3">
-          <h4 class="font-bold text-2xl text-[#0065DB] mb-3">Kevin Merco</h4>
+          <h4 class="font-bold text-2xl text-[#0065DB] mb-3">Rendi</h4>
           <p class="flex items-center">
             <img src="{{ asset('assets/icon/star.svg') }}" class="mr-2" alt=""> 5 (50 ulasan)
           </p>
           <p class="font-light text-lg my-2">Surabaya - Tatap muka & Online</p>
-          <p class="font-bold text-xl text-black mb-2">Bahasa Inggris</p>
+          <p class="font-bold text-xl text-black mb-2">Matematika</p>
           <p class="font-light text-xl">
-            ENG-ID. Kids Friendly | Bilingual Digital Arts & Comic Expert | 15+ Years Experience....
+            Lulusan S2 Statistika ITS yang pernah juara kompetisi serta memiliki pengalaman...
           </p>
           <p class="text-[#0065DB] font-semibold text-xl mt-4">Rp 100,000/jam</p>
         </div>
@@ -51,15 +51,15 @@
       <div
         class="bg-white shadow-xl rounded-2xl overflow-hidden group cursor-pointer min-w-[80%] sm:min-w-[60%] md:min-w-[calc(100%/3-16px)] snap-start">
         <div class="overflow-hidden">
-          <img src="{{ asset('assets/img/card-mentor/05.png') }}"
+          <img src="{{ asset('assets/img/mentor/18.png') }}"
             class="w-full transform transition-transform duration-500 ease-in-out group-hover:scale-105" alt="">
         </div>
         <div class="p-8 mt-3">
-          <h4 class="font-bold text-2xl text-[#0065DB] mb-3">Maudia Tamara</h4>
+          <h4 class="font-bold text-2xl text-[#0065DB] mb-3">Aldy</h4>
           <p class="flex items-center">
             <img src="{{ asset('assets/icon/star.svg') }}" class="mr-2" alt=""> 5 (50 ulasan)
           </p>
-          <p class="font-light text-lg my-2">Surabaya - Online</p>
+          <p class="font-light text-lg my-2">Surabaya - Tatap muka & Online</p>
           <p class="font-bold text-xl text-black mb-2">Bahasa Prancis</p>
           <p class="font-light text-xl">Lulusan Sastra Prancis dengan memiliki DELF B1 menawarkan kursus bahasa
             Perancis....</p>
@@ -75,13 +75,14 @@
             class="w-full transform transition-transform duration-500 ease-in-out group-hover:scale-105" alt="">
         </div>
         <div class="p-8 mt-3">
-          <h4 class="font-bold text-2xl text-[#0065DB] mb-3">Aditya Pratama</h4>
+          <h4 class="font-bold text-2xl text-[#0065DB] mb-3">Fauzan</h4>
           <p class="flex items-center">
             <img src="{{ asset('assets/icon/star.svg') }}" class="mr-2" alt=""> 5 (50 ulasan)
           </p>
           <p class="font-light text-lg my-2">Surabaya - Tatap muka & Online</p>
-          <p class="font-bold text-xl text-black mb-2">Menggambar</p>
-          <p class="font-light text-xl">Belajar menggambar hampir apa saja dalam waktu singkat! Kembangkan...</p>
+          <p class="font-bold text-xl text-black mb-2">Fisika</p>
+          <p class="font-light text-xl">Alumni Teknik Fisika UGM berpengalaman 8 tahun mengajar dan menaklukkan Fisika
+            dan...</p>
           <p class="text-[#0065DB] font-semibold text-xl mt-4">Rp 100,000/jam</p>
         </div>
       </div>

@@ -136,10 +136,17 @@
   </div>
 
 
-  {{-- Scroll navbar background --}}
+
   <script>
     const navbar = document.getElementById('navbar');
-    navbar.classList.add('text-black', 'bg-white')
+    navbar.classList.add('text-black', 'bg-white',
+      'shadow-md')
+
+    const logo = document.getElementById('logo');
+
+    navbar.classList.add('bg-white', 'bg-opacity-90', 'shadow-md', 'text-black');
+    navbar.classList.remove('text-white');
+    logo.src = "{{ asset('assets/img/logo-secondary.png') }}";
   </script>
   <script>
     // Add interactivity

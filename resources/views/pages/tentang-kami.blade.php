@@ -119,19 +119,19 @@
     <div class="flex justify-center">
       <div class="countdown py-5  text-black mx-auto flex justify-between w-full">
         <div class="text-center w-full">
-          <h3 class="font-bold text-6xl">20</h3>
+          <h3 class="font-bold text-6xl count" data-target="20">0</h3>
           <p class="">Bidang</p>
         </div>
         <div class="text-center w-full">
-          <h3 class="font-bold text-6xl">82</h3>
+          <h3 class="font-bold text-6xl count" data-target="82">0</h3>
           <p class="">Mentor</p>
         </div>
         <div class="text-center w-full">
-          <h3 class="font-bold text-6xl">200+</h3>
+          <h3 class="font-bold text-6xl count" data-target="200" data-plus="true">0</h3>
           <p class="">Sesi</p>
         </div>
         <div class="text-center w-full">
-          <h3 class="font-bold text-6xl">150+</h3>
+          <h3 class="font-bold text-6xl count" data-target="150" data-plus="true">0</h3>
           <p class="">Peserta</p>
         </div>
       </div>
@@ -163,7 +163,7 @@
       </div>
 
       <div class="flex-1">
-        <img src="{{ asset('assets/img/teachbot.png') }}" alt="">
+        <img src="{{ asset('assets/img/teachbot.png') }}" alt="" class="animate-bounce  duration-1000">
       </div>
 
 
@@ -383,3 +383,18 @@
     });
   </script>
 @endsection
+@push('js')
+  <script>
+    navbar.classList.add('text-white')
+    window.addEventListener('scroll', function() {
+      const navbar = document.getElementById('navbar');
+      if (window.scrollY > 100) {
+        navbar.classList.add('bg-white', 'bg-opacity-90', 'shadow-md', 'text-black');
+        navbar.classList.remove('text-white');
+      } else {
+        navbar.classList.remove('bg-white', 'bg-opacity-90', 'shadow-md', 'text-black');
+        navbar.classList.add('text-white');
+      }
+    });
+  </script>
+@endpush

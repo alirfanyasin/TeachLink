@@ -14,21 +14,21 @@
 
     <div class="flex justify-center">
       <div
-        class="countdown px-10 py-5 bg-white shadow-xl rounded-2xl text-black mx-auto flex justify-between w-8/12 absolute -bottom-14">
+        class="countdown px-10 py-5 bg-white/70 backdrop-blur-lg shadow-xl rounded-2xl text-black mx-auto flex justify-between w-8/12 absolute -bottom-14">
         <div class="text-center">
-          <h3 class="font-bold text-6xl">20</h3>
+          <h3 class="font-bold text-6xl count" data-target="20">0</h3>
           <p class="">Bidang</p>
         </div>
         <div class="text-center">
-          <h3 class="font-bold text-6xl">82</h3>
+          <h3 class="font-bold text-6xl count" data-target="82">0</h3>
           <p class="">Mentor</p>
         </div>
         <div class="text-center">
-          <h3 class="font-bold text-6xl">200+</h3>
+          <h3 class="font-bold text-6xl count" data-target="200" data-plus="true">0</h3>
           <p class="">Sesi</p>
         </div>
         <div class="text-center">
-          <h3 class="font-bold text-6xl">150+</h3>
+          <h3 class="font-bold text-6xl count" data-target="150" data-plus="true">0</h3>
           <p class="">Peserta</p>
         </div>
       </div>
@@ -110,7 +110,7 @@
 
       <div class="bg-white shadow-xl rounded-2xl overflow-hidden group cursor-pointer">
         <div class="overflow-hidden">
-          <img src="{{ asset('assets/img/card-mentor/03.png') }}"
+          <img src="{{ asset('assets/img/mentor/16.png') }}"
             class="w-full transform transition-transform duration-500 ease-in-out group-hover:scale-110" alt="">
         </div>
         <div class="p-8 mt-3">
@@ -125,28 +125,28 @@
       </div>
       <div class="bg-white shadow-xl rounded-2xl overflow-hidden group cursor-pointer">
         <div class="overflow-hidden">
-          <img src="{{ asset('assets/img/card-mentor/04.png') }}"
+          <img src="{{ asset('assets/img/mentor/17.png') }}"
             class="w-full transform transition-transform duration-500 ease-in-out group-hover:scale-110" alt="">
         </div>
         <div class="p-8 mt-3">
-          <h4 class="font-bold text-2xl text-[#0065DB] mb-3">Kevin Merco</h4>
+          <h4 class="font-bold text-2xl text-[#0065DB] mb-3">Rendi</h4>
           <p class="flex items-center"><img src="{{ asset('assets/icon/star.svg') }}" class="mr-2" alt="">
             5 (50 ulasan)</p>
           <p class="font-light text-lg my-2">Surabaya - Tatap muka & Online</p>
-          <p class="font-bold text-xl text-black mb-2">Bahasa inggris</p>
-          <p class="font-light text-xl">ENG-ID. Kids Friendly | Bilingual Digital Arts & Comic Expert | 15+ Years
-            Experience....</p>
+          <p class="font-bold text-xl text-black mb-2">Matematika</p>
+          <p class="font-light text-xl">Lulusan S2 Statistika ITS yang pernah juara kompetisi serta memiliki
+            pengalaman...</p>
           <p class="text-[#0065DB] font-semibold text-xl mt-4">Rp 100,000/jam</p>
         </div>
       </div>
 
       <div class="bg-white shadow-xl rounded-2xl overflow-hidden group cursor-pointer">
         <div class="overflow-hidden">
-          <img src="{{ asset('assets/img/card-mentor/05.png') }}"
+          <img src="{{ asset('assets/img/mentor/18.png') }}"
             class="w-full transform transition-transform duration-500 ease-in-out group-hover:scale-110" alt="">
         </div>
         <div class="p-8 mt-3">
-          <h4 class="font-bold text-2xl text-[#0065DB] mb-3">Maudia Tamara</h4>
+          <h4 class="font-bold text-2xl text-[#0065DB] mb-3">Aldy</h4>
           <p class="flex items-center"><img src="{{ asset('assets/icon/star.svg') }}" class="mr-2" alt="">
             5 (50 ulasan)</p>
           <p class="font-light text-lg my-2">Surabaya - Online</p>
@@ -159,16 +159,70 @@
 
       <div class="bg-white shadow-xl rounded-2xl overflow-hidden group cursor-pointer">
         <div class="overflow-hidden">
-          <img src="{{ asset('assets/img/card-mentor/03.png') }}"
+          <img src="{{ asset('assets/img/mentor/19.png') }}"
             class="w-full transform transition-transform duration-500 ease-in-out group-hover:scale-110" alt="">
         </div>
         <div class="p-8 mt-3">
-          <h4 class="font-bold text-2xl text-[#0065DB] mb-3">Aditya Pratama</h4>
+          <h4 class="font-bold text-2xl text-[#0065DB] mb-3">Fauzan</h4>
           <p class="flex items-center"><img src="{{ asset('assets/icon/star.svg') }}" class="mr-2" alt="">
             5 (50 ulasan)</p>
           <p class="font-light text-lg my-2">Surabaya - Tatap muka & Online</p>
-          <p class="font-bold text-xl text-black mb-2">Menggambar</p>
-          <p class="font-light text-xl">Belajar menggambar hampir apa saja dalam waktu singkat! Kembangkan...</p>
+          <p class="font-bold text-xl text-black mb-2">Fisika</p>
+          <p class="font-light text-xl">Alumni Teknik Fisika UGM berpengalaman 8 tahun mengajar dan menaklukkan Fisika
+            dan...</p>
+          <p class="text-[#0065DB] font-semibold text-xl mt-4">Rp 100,000/jam</p>
+        </div>
+      </div>
+
+
+
+      <div class="bg-white shadow-xl rounded-2xl overflow-hidden group cursor-pointer">
+        <div class="overflow-hidden">
+          <img src="{{ asset('assets/img/mentor/21.png') }}"
+            class="w-full transform transition-transform duration-500 ease-in-out group-hover:scale-110" alt="">
+        </div>
+        <div class="p-8 mt-3">
+          <h4 class="font-bold text-2xl text-[#0065DB] mb-3">Oswaldo</h4>
+          <p class="flex items-center"><img src="{{ asset('assets/icon/star.svg') }}" class="mr-2" alt="">
+            5 (50 ulasan)</p>
+          <p class="font-light text-lg my-2">Surabaya - Tatap muka & Online</p>
+          <p class="font-bold text-xl text-black mb-2">Gitar</p>
+          <p class="font-light text-xl">Mengajar teknik dasar bermain gitar, kunci dasar, kepekaan terhadap tempo / nada,
+            dll khusus..</p>
+          <p class="text-[#0065DB] font-semibold text-xl mt-4">Rp 100,000/jam</p>
+        </div>
+      </div>
+
+      <div class="bg-white shadow-xl rounded-2xl overflow-hidden group cursor-pointer">
+        <div class="overflow-hidden">
+          <img src="{{ asset('assets/img/mentor/22.png') }}"
+            class="w-full transform transition-transform duration-500 ease-in-out group-hover:scale-110" alt="">
+        </div>
+        <div class="p-8 mt-3">
+          <h4 class="font-bold text-2xl text-[#0065DB] mb-3">Yusuf Handoko</h4>
+          <p class="flex items-center"><img src="{{ asset('assets/icon/star.svg') }}" class="mr-2" alt="">
+            5 (50 ulasan)</p>
+          <p class="font-light text-lg my-2">Surabaya - Online</p>
+          <p class="font-bold text-xl text-black mb-2">Badminton</p>
+          <p class="font-light text-xl">Pelatih badminton untuk level basic hingga profesional, lulusan/alumni atlet
+            binaan PB DJARUM...</p>
+          <p class="text-[#0065DB] font-semibold text-xl mt-4">Rp 100,000/jam</p>
+        </div>
+      </div>
+
+      <div class="bg-white shadow-xl rounded-2xl overflow-hidden group cursor-pointer">
+        <div class="overflow-hidden">
+          <img src="{{ asset('assets/img/mentor/23.png') }}"
+            class="w-full transform transition-transform duration-500 ease-in-out group-hover:scale-110" alt="">
+        </div>
+        <div class="p-8 mt-3">
+          <h4 class="font-bold text-2xl text-[#0065DB] mb-3">Samuel</h4>
+          <p class="flex items-center"><img src="{{ asset('assets/icon/star.svg') }}" class="mr-2" alt="">
+            5 (50 ulasan)</p>
+          <p class="font-light text-lg my-2">Surabaya - Tatap Muka</p>
+          <p class="font-bold text-xl text-black mb-2">Berenang</p>
+          <p class="font-light text-xl">Les renang terbaik, Ingin memiliki skill renang yang baik dan berprestasi,
+            belajar renang...</p>
           <p class="text-[#0065DB] font-semibold text-xl mt-4">Rp 100,000/jam</p>
         </div>
       </div>
@@ -246,7 +300,7 @@
 
 
         <div
-          class="bg-white/30 backdrop-blur-2xl rounded-xl flex justify-center absolute right-0 py-12 bottom-28 w-50 border-2 border-gray-200">
+          class="bg-white/30 animate-bounce backdrop-blur-2xl rounded-xl flex justify-center absolute right-0 py-12 bottom-28 w-50 border-2 border-gray-200">
           <div>
             <img src="{{ asset('assets/icon/tech-mentor.svg') }}" class="mx-auto w-20 mb-5" alt="">
             <h3 class="uppercase text-xl font-semibold">Tech Mentor</h3>
@@ -371,7 +425,7 @@
 
 
       <div class="flex-1">
-        <img src="{{ asset('assets/img/teachbot-2.png') }}" alt="" class="w-full">
+        <img src="{{ asset('assets/img/teachbot-2.png') }}" alt="" class="w-full animate-bounce">
       </div>
     </div>
   </section>
@@ -412,3 +466,18 @@
     });
   </script>
 @endsection
+@push('js')
+  <script>
+    navbar.classList.add('text-white')
+    window.addEventListener('scroll', function() {
+      const navbar = document.getElementById('navbar');
+      if (window.scrollY > 100) {
+        navbar.classList.add('bg-white', 'bg-opacity-90', 'shadow-md', 'text-black');
+        navbar.classList.remove('text-white');
+      } else {
+        navbar.classList.remove('bg-white', 'bg-opacity-90', 'shadow-md', 'text-black');
+        navbar.classList.add('text-white');
+      }
+    });
+  </script>
+@endpush
