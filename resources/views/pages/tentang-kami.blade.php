@@ -163,7 +163,7 @@
       </div>
 
       <div class="flex-1">
-        <img src="{{ asset('assets/img/teachbot.png') }}" alt="" class="animate-bounce  duration-1000">
+        <img src="{{ asset('assets/img/teachbot.png') }}" alt="">
       </div>
 
 

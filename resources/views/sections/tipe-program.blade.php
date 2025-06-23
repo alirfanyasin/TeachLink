@@ -14,7 +14,7 @@
         <h4 class="font-bold text-2xl text-white">Online</h4>
         <p class="font-regular">Kalau kamu ngga mau ribet cari waktu atau terlalu jauh buat ketemu, kamu bisa
           belajar secara online sama mentor kamu!</p>
-        <a href="" class="py-2 px-4 bg-white/20 backdrop-blur-sm rounded-3xl flex items-center mt-3">
+        <a href="/mentor" class="py-2 px-4 bg-white/20 backdrop-blur-sm rounded-3xl flex items-center mt-3">
           <img src="{{ asset('assets/icon/btn-cari-mentor.svg') }}" alt="">
           <span class="text-lg ml-3 font-semibold">Cari mentor disekitarmu!</span>
         </a>
@@ -28,7 +28,7 @@
         <h4 class="font-bold text-2xl text-white">Offline</h4>
         <p class="font-regular">Kalau kamu mau belajar sambil langsung dibimbing, kamu bisa langsung ketemu sama
           mentor kamu!</p>
-        <a href="" class="py-2 px-4 bg-white/20 backdrop-blur-sm rounded-3xl flex items-center mt-3">
+        <a href="/mentor" class="py-2 px-4 bg-white/20 backdrop-blur-sm rounded-3xl flex items-center mt-3">
           <img src="{{ asset('assets/icon/btn-cari-mentor.svg') }}" alt="">
           <span class="text-lg ml-3 font-semibold">Cari mentor disekitarmu!</span>
         </a>

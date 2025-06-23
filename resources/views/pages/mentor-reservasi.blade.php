@@ -26,7 +26,7 @@
 
                 <div class="bg-white rounded-xl border-gray-200 p-3 border">
                   <div class="flex items-center justify-center space-x-3">
-                    <span class="font-bold text-[#0065DB]">Surabaya</span>
+                    <span class="font-bold text-[#0065DB]">Online</span>
                     <iconify-icon icon="fluent:people-chat-24-regular" width="24"
                       class="text-[#0065DB]"></iconify-icon>
                   </div>

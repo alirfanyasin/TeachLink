@@ -228,11 +228,11 @@
             </small>
           </div>
 
-          <button
+          <a href="/chat"
             class="bg-white rounded-xl border-2 border-gray-300 mt-3 w-full py-2 flex hover:cursor-pointer items-center text-[#0065DB] justify-center space-x-3">
             <span class="font-bold">Hubungi Mentor</span>
             <img src="{{ asset('assets/icon/chat-icon.svg') }}" class="w-5" alt="">
-          </button>
+          </a>
 
           <a href="/mentor-reservasi"
             class="rounded-xl border-2 border-gray-300 mt-3 w-full py-2 flex hover:cursor-pointer items-center text-white bg-[#0065DB] justify-center space-x-3">

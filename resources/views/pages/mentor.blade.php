@@ -300,7 +300,7 @@
 
 
         <div
-          class="bg-white/30 animate-bounce backdrop-blur-2xl rounded-xl flex justify-center absolute right-0 py-12 bottom-28 w-50 border-2 border-gray-200">
+          class="bg-white/30 backdrop-blur-2xl rounded-xl flex justify-center absolute right-0 py-12 bottom-28 w-50 border-2 border-gray-200">
           <div>
             <img src="{{ asset('assets/icon/tech-mentor.svg') }}" class="mx-auto w-20 mb-5" alt="">
             <h3 class="uppercase text-xl font-semibold">Tech Mentor</h3>
@@ -425,7 +425,7 @@
 
 
       <div class="flex-1">
-        <img src="{{ asset('assets/img/teachbot-2.png') }}" alt="" class="w-full animate-bounce">
+        <img src="{{ asset('assets/img/teachbot-2.png') }}" alt="" class="w-full">
       </div>
     </div>
   </section>

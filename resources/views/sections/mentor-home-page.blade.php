@@ -71,7 +71,7 @@
       <div
         class="bg-white shadow-xl rounded-2xl overflow-hidden group cursor-pointer min-w-[80%] sm:min-w-[60%] md:min-w-[calc(100%/3-16px)] snap-start">
         <div class="overflow-hidden">
-          <img src="{{ asset('assets/img/card-mentor/03.png') }}"
+          <img src="{{ asset('assets/img/mentor/19.png') }}"
             class="w-full transform transition-transform duration-500 ease-in-out group-hover:scale-105" alt="">
         </div>
         <div class="p-8 mt-3">
@@ -92,7 +92,7 @@
       <div
         class="bg-white shadow-xl rounded-2xl overflow-hidden group cursor-pointer min-w-[80%] sm:min-w-[60%] md:min-w-[calc(100%/3-16px)] snap-start">
         <div class="overflow-hidden">
-          <img src="{{ asset('assets/img/card-mentor/04.png') }}"
+          <img src="{{ asset('assets/img/card-mentor/01.png') }}"
             class="w-full transform transition-transform duration-500 ease-in-out group-hover:scale-105" alt="">
         </div>
         <div class="p-8 mt-3">
@@ -114,7 +114,7 @@
       <div
         class="bg-white shadow-xl rounded-2xl overflow-hidden group cursor-pointer min-w-[80%] sm:min-w-[60%] md:min-w-[calc(100%/3-16px)] snap-start">
         <div class="overflow-hidden">
-          <img src="{{ asset('assets/img/card-mentor/05.png') }}"
+          <img src="{{ asset('assets/img/card-mentor/02.png') }}"
             class="w-full transform transition-transform duration-500 ease-in-out group-hover:scale-105" alt="">
         </div>
         <div class="p-8 mt-3">
@@ -134,7 +134,7 @@
       <div
         class="bg-white shadow-xl rounded-2xl overflow-hidden group cursor-pointer min-w-[80%] sm:min-w-[60%] md:min-w-[calc(100%/3-16px)] snap-start">
         <div class="overflow-hidden">
-          <img src="{{ asset('assets/img/card-mentor/03.png') }}"
+          <img src="{{ asset('assets/img/mentor/16.png') }}"
             class="w-full transform transition-transform duration-500 ease-in-out group-hover:scale-105"
             alt="">
         </div>
@@ -155,7 +155,7 @@
 
   <!-- CTA -->
   <div class="mt-10 flex justify-center">
-    <a href="#"
+    <a href="/mentor"
       class="bg-[#0065DB] text-white rounded-full px-6 py-3 flex items-center w-fit gap-3 hover:bg-blue-700 transition">
       <span class="text-base md:text-lg">Lihat Lebih Banyak</span>
       <img src="{{ asset('assets/icon/arrow-right.svg') }}" alt="">
