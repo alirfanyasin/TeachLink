@@ -12,10 +12,10 @@
       </div>
     </div>
     <div class="flex">
-      <button id="arrowLeft" class="p-2 rounded-full bg-[#EFEFEF] hover:bg-[#0065DB] mr-2 hover:cursor-pointer">
+      <button id="mentor-arrowLeft" class="p-2 rounded-full bg-[#EFEFEF] hover:bg-[#0065DB] mr-2 hover:cursor-pointer">
         <img src="{{ asset('assets/icon/arrow-left.svg') }}" alt="">
       </button>
-      <button id="arrowRight" class="p-2 rounded-full bg-[#EFEFEF] hover:bg-[#0065DB] hover:cursor-pointer">
+      <button id="mentor-arrowRight" class="p-2 rounded-full bg-[#EFEFEF] hover:bg-[#0065DB] hover:cursor-pointer">
         <img src="{{ asset('assets/icon/arrow-right.svg') }}" alt="">
       </button>
     </div>
@@ -26,7 +26,7 @@
 
   <!-- Slider Container -->
   <div class="relative">
-    <div id="sliderContainer" class="swiper flex gap-6 no-scrollbar pb-10">
+    <div id="mentor-sliderContainer" class="swiper flex gap-6 no-scrollbar pb-10">
       <div class="swiper-wrapper">
         <!-- CARD 1 -->
         <div class="swiper-slide bg-white shadow-xl rounded-2xl overflow-hidden group cursor-pointer max-w-[350px]">
@@ -168,10 +168,10 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script>
   document.addEventListener('DOMContentLoaded', function () {
-    const totalSlides = document.querySelectorAll('#sliderContainer .swiper-slide').length;
+    const totalSlides = document.querySelectorAll('#mentor-sliderContainer .swiper-slide').length;
     const enableLoop = totalSlides >= 6; 
 
-    const swiper = new Swiper('#sliderContainer', {
+    const swiper = new Swiper('#mentor-sliderContainer', {
       slidesPerView: 1,
       spaceBetween: 24,
       breakpoints: {
@@ -183,8 +183,8 @@
         },
       },
       navigation: {
-        nextEl: '#arrowRight',
-        prevEl: '#arrowLeft',
+        nextEl: '#mentor-arrowRight',
+        prevEl: '#mentor-arrowLeft',
       },
       grabCursor: true,
       centeredSlides: false,

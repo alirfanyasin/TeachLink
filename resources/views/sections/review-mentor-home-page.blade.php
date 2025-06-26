@@ -6,17 +6,17 @@
     </div>
     <div class="flex">
       {{-- Navigator --}}
-      <button id="arrowLeft" class="p-2 rounded-full bg-[#EFEFEF] hover:cursor-pointer mr-2 hover:bg-[#0065DB]">
+      <button id="review-arrowLeft" class="p-2 rounded-full bg-[#EFEFEF] hover:cursor-pointer mr-2 hover:bg-[#0065DB]">
         <img src="{{ asset('assets/icon/arrow-left.svg') }}" alt="">
       </button>
-      <button id="arrowRight" class="p-2 rounded-full bg-[#EFEFEF] hover:cursor-pointer hover:bg-[#0065DB]">
+      <button id="review-arrowRight" class="p-2 rounded-full bg-[#EFEFEF] hover:cursor-pointer hover:bg-[#0065DB]">
         <img src="{{ asset('assets/icon/arrow-right.svg') }}" alt="">
       </button>
     </div>
   </header>
 
   {{-- Slider --}}
-  <div id="sliderContainer" class="flex gap-10 overflow-x-auto scroll-smooth scrollbar-hide">
+  <div id="review-sliderContainer" class="flex gap-10 overflow-x-auto scroll-smooth scrollbar-hide">
 
 
     {{-- Card 1 --}}
@@ -171,9 +171,9 @@
 
 
 <script>
-  const sliderContainer = document.getElementById("sliderContainer");
-  const leftBtn = document.getElementById("arrowLeft");
-  const rightBtn = document.getElementById("arrowRight");
+  const sliderContainer = document.getElementById("review-sliderContainer");
+  const leftBtn = document.getElementById("review-arrowLeft");
+  const rightBtn = document.getElementById("review-arrowRight");
 
   // Ambil satu card sebagai referensi lebar slide
   const card = document.querySelector('.card');

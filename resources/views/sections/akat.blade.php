@@ -10,7 +10,7 @@
 
     <div>
       <!-- Slider Container -->
-      <div class="swiper">
+      <div id="akat-swiper" class="swiper">
         <div class="swiper-wrapper">
 
           <!-- Testimonial Slide 1 -->
@@ -22,7 +22,7 @@
               </div>
 
               <h2 class="text-3xl font-bold mt-16">
-                “Dengan jadwal yang padat, Techlink membantu saya dalam mengelola waktu dan belajar secara efektif.”
+                "Dengan jadwal yang padat, Techlink membantu saya dalam mengelola waktu dan belajar secara efektif."
               </h2>
 
               <div class="flex mt-10">
@@ -44,7 +44,7 @@
               </div>
 
               <h2 class="text-3xl font-bold mt-16">
-                “Techlink membuat proses belajar lebih mudah dan menyenangkan. Mentor-nya ramah dan profesional!”
+                "Techlink membuat proses belajar lebih mudah dan menyenangkan. Mentor-nya ramah dan profesional!"
               </h2>
 
               <div class="flex mt-10">
@@ -66,7 +66,7 @@
               </div>
 
               <h2 class="text-3xl font-bold mt-16">
-                “Belajar coding jadi lebih cepat paham karena mentor Techlink sangat berpengalaman.”
+                "Belajar coding jadi lebih cepat paham karena mentor Techlink sangat berpengalaman."
               </h2>
 
               <div class="flex mt-10">
@@ -84,10 +84,10 @@
 
       <!-- Navigation Buttons -->
       <div class="flex mt-5">
-        <button id="arrowLeft" class="p-2 rounded-full bg-[#EFEFEF] hover:cursor-pointer mr-2 hover:bg-[#0065DB]">
+        <button id="akat-arrowLeft" class="p-2 rounded-full bg-[#EFEFEF] hover:cursor-pointer mr-2 hover:bg-[#0065DB]">
           <img src="{{ asset('assets/icon/arrow-left.svg') }}" alt="">
         </button>
-        <button id="arrowRight" class="p-2 rounded-full bg-[#EFEFEF] hover:cursor-pointer hover:bg-[#0065DB]">
+        <button id="akat-arrowRight" class="p-2 rounded-full bg-[#EFEFEF] hover:cursor-pointer hover:bg-[#0065DB]">
           <img src="{{ asset('assets/icon/arrow-right.svg') }}" alt="">
         </button>
       </div>
@@ -100,13 +100,13 @@
 
 <script>
   document.addEventListener('DOMContentLoaded', function () {
-    const swiper = new Swiper('.swiper', {
+    const swiper = new Swiper('#akat-swiper', {
       slidesPerView: 1,
       spaceBetween: 30,
       loop: true,
       navigation: {
-        nextEl: '#arrowRight',
-        prevEl: '#arrowLeft',
+        nextEl: '#akat-arrowRight',
+        prevEl: '#akat-arrowLeft',
       },
     });
   });
