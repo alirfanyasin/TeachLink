@@ -30,19 +30,19 @@
           </header>
 
           <div class="flex items-center space-x-2">
-            <div class="bg-[#40BE7A] rounded-xl border-gray-200 px-8 py-3 border hover:cursor-pointer">
-              <div class="flex items-center justify-center space-x-3">
-                <span class="font-bold text-white">Bank BCA</span>
-              </div>
-            </div>
-            <div class="bg-white rounded-xl border-gray-200 px-8 py-3 border hover:cursor-pointer">
+            <div class="bg-white rounded-xl border-gray-200 px-8 py-3 border hover:cursor-pointer bank-card">
               <div class="flex items-center justify-center space-x-3">
                 <span class="font-bold text-black">Bank BCA</span>
               </div>
             </div>
-            <div class="bg-white rounded-xl border-gray-200 px-8 py-3 border hover:cursor-pointer">
+            <div class="bg-white rounded-xl border-gray-200 px-8 py-3 border hover:cursor-pointer bank-card">
               <div class="flex items-center justify-center space-x-3">
-                <span class="font-bold text-black">Bank BCA</span>
+                <span class="font-bold text-black">Bank BRI</span>
+              </div>
+            </div>
+            <div class="bg-white rounded-xl border-gray-200 px-8 py-3 border hover:cursor-pointer bank-card">
+              <div class="flex items-center justify-center space-x-3">
+                <span class="font-bold text-black">Bank MANDIRI</span>
               </div>
             </div>
           </div>
@@ -122,6 +122,13 @@
     input[type="date"]::-ms-expand {
       display: none;
     }
+    .active-bank {
+      background: #40BE7A !important;
+      color: #fff !important;
+    }
+    .active-bank span {
+      color: #fff !important;
+    }
   </style>
 @endpush
 @push('js')
@@ -129,10 +136,21 @@
     const calendarIcon = document.getElementById('calendarIcon');
     const dateInput = document.getElementById('dateInput');
 
-    calendarIcon.addEventListener('click', function() {
-      dateInput.showPicker?.(); // modern browsers
-      // fallback untuk browser lama
-      dateInput.focus();
+    if(calendarIcon && dateInput) {
+      calendarIcon.addEventListener('click', function() {
+        dateInput.showPicker?.(); // modern browsers
+        // fallback untuk browser lama
+        dateInput.focus();
+      });
+    }
+
+    // Pilihan Bank
+    const bankCards = document.querySelectorAll('.bank-card');
+    bankCards.forEach(card => {
+      card.addEventListener('click', function() {
+        bankCards.forEach(c => c.classList.remove('active-bank'));
+        this.classList.add('active-bank');
+      });
     });
   </script>
 @endpush

@@ -17,14 +17,14 @@
 
             <div class="mb-4">
               <div class="flex items-center mt-5 space-x-3">
-                <div class="bg-white rounded-xl border-gray-200 p-3 border">
+                <div class="bg-white rounded-xl border-gray-200 p-3 border method-card hover:cursor-pointer">
                   <div class="flex items-center justify-center space-x-3">
                     <span class="font-bold text-[#0065DB]">Offline</span>
                     <iconify-icon icon="mingcute:location-2-fill" width="24" class="text-[#0065DB]"></iconify-icon>
                   </div>
                 </div>
 
-                <div class="bg-white rounded-xl border-gray-200 p-3 border">
+                <div class="bg-white rounded-xl border-gray-200 p-3 border method-card hover:cursor-pointer">
                   <div class="flex items-center justify-center space-x-3">
                     <span class="font-bold text-[#0065DB]">Online</span>
                     <iconify-icon icon="fluent:people-chat-24-regular" width="24"
@@ -119,6 +119,16 @@
     input[type="date"]::-ms-expand {
       display: none;
     }
+    .active-method {
+      background: #0065DB !important;
+      color: #fff !important;
+    }
+    .active-method span {
+      color: #fff !important;
+    }
+    .active-method iconify-icon {
+      color: #fff !important;
+    }
   </style>
 @endpush
 @push('js')
@@ -130,6 +140,15 @@
       dateInput.showPicker?.(); // modern browsers
       // fallback untuk browser lama
       dateInput.focus();
+    });
+
+    // Pilihan Offline/Online
+    const methodCards = document.querySelectorAll('.method-card');
+    methodCards.forEach(card => {
+      card.addEventListener('click', function() {
+        methodCards.forEach(c => c.classList.remove('active-method'));
+        this.classList.add('active-method');
+      });
     });
   </script>
 @endpush
