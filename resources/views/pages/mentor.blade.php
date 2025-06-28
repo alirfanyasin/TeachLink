@@ -287,7 +287,7 @@
             <h4 class="text-white text-lg">Yuk! Daftarkan diri kamu dan <br> jadilah Top-mentor favorite <br>
               Tech-verse selanjutnya!</h4>
 
-            <a href="" class="mt-5 inline-block  text-black">
+            <a href="/home-mentor" class="mt-5 inline-block  text-black">
               <div class="flex justify-center items-center bg-white rounded-full px-2 py-1">
                 <span class="font-semibold text-lg mx-4">Bergabung sebagai mentor</span>
                 <div class="bg-[#0052B4] text-white w-10 h-10 rounded-full flex justify-center items-center">

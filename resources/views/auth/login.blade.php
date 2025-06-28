@@ -53,13 +53,15 @@
   <style>
     .active {
       border-color: #0061C1;
-      border-width: 2px;
+      border-width: 3px;
     }
   </style>
 
   <script>
     const mahasiswaBtn = document.getElementById('mahasiswaBtn');
     const mentorBtn = document.getElementById('mentorBtn');
+
+    let selectedUserType = null;
 
     function resetButtons() {
       mahasiswaBtn.classList.remove('active');
@@ -69,11 +71,29 @@
     mahasiswaBtn.addEventListener('click', () => {
       resetButtons();
       mahasiswaBtn.classList.add('active');
+      selectedUserType = 'mahasiswa';
     });
 
     mentorBtn.addEventListener('click', () => {
       resetButtons();
       mentorBtn.classList.add('active');
+      selectedUserType = 'mentor';
     });
+
+    function setLoginSession() {
+      if (!selectedUserType) {
+        alert('Silakan pilih tipe akun terlebih dahulu!');
+        return;
+      }
+
+      localStorage.setItem('isLoggedIn', 'true');
+      localStorage.setItem('userType', selectedUserType);
+
+      if (selectedUserType === 'mahasiswa') {
+        window.location.href = '/';
+      } else if (selectedUserType === 'mentor') {
+        window.location.href = '/home-mentor';
+      }
+    }
   </script>
 @endsection

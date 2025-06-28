@@ -32,13 +32,13 @@
   </div>
 
 
-  <script>
+  {{-- <script>
     // Fungsi untuk set localStorage saat login
     function setLoginSession() {
       localStorage.setItem('isLoggedIn', 'true');
       window.location.href = '/';
     }
-  </script>
+  </script> --}}
 
 </body>
 
